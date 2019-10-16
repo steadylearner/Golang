@@ -14,7 +14,7 @@ Use only std packages when you are a beginner.
 
 ## Write code
 
-1. [Web Server](https://golang.org/doc/articles/wiki/) and [its code](https://golang.org/doc/articles/wiki/final.go)
+1. [Official Web Project](https://golang.org/doc/articles/wiki/), [its code](https://golang.org/doc/articles/wiki/final.go) and [this blog](http://polyglot.ninja/golang-making-http-requests/)
 2. [JSON](https://www.google.com/search?&q=how+to+use+json+in+golang) and [this blog](http://polyglot.ninja/golang-json/)
 3. [SQL](https://www.calhoun.io/connecting-to-a-postgresql-database-with-gos-database-sql-package/)
 4. [gRPC](https://grpc.io/docs/quickstart/go/)
