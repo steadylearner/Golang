@@ -10,12 +10,12 @@ Use only std packages when you are a beginner.
 ## Learn how to structure the projects
 
 1. [Use Golang moudles.](https://blog.golang.org/using-go-modules)
-2. [Refer to this example for more complicated projects.](https://github.com/golang-standards/project-layout)
+2. [Refer to this example.](https://github.com/golang-standards/project-layout)
 
 ## Write code
 
 1. [Web Server](https://golang.org/doc/articles/wiki/) and [its code](https://golang.org/doc/articles/wiki/final.go)
-2. [JSON](https://www.google.com/search?&q=how+to+use+json+in+golang)
+2. [JSON](https://www.google.com/search?&q=how+to+use+json+in+golang) and [this blog](http://polyglot.ninja/golang-json/)
 3. [SQL](https://www.calhoun.io/connecting-to-a-postgresql-database-with-gos-database-sql-package/)
 4. [gRPC](https://grpc.io/docs/quickstart/go/)
 
