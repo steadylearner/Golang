@@ -34,3 +34,4 @@ Use only std packages when you are a beginner.
 ## READ MORE
 
 1. [Golang Blog](https://blog.golang.org/)
+2. [Web Examples](https://gowebexamples.com)
