@@ -1,6 +1,6 @@
 # How to follow the offical gRPC instruction 
 
-You can use this example while you use go mod API. 
+You can use refer to this(with go mod API) while you follow [the official gRPC instruction for Golang](https://grpc.io/docs/quickstart/go/). 
 
 You can use other modules in the example inside import but you should use this command for protoc-gen-go.
 
