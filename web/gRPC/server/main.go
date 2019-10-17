@@ -28,28 +28,30 @@ import (
         "fmt"
 
 	"google.golang.org/grpc"
-	pb "steadylearner/gRPC/typeDef"
+	pb "steadylearner/gRPC/typeDefs"
 
-        . "github.com/logrusorgru/aurora"
+    . "github.com/logrusorgru/aurora"
 )
 
 const (
 	port = ":50051"
 )
 
-// server is used to implement helloworld.GreeterServer.
 type server struct {
-	pb.UnimplementedGreeterServer
+	pb.GreeterServer
 }
 
-// SayHello implements helloworld.GreeterServer
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	log.Printf("Received: %v", in.GetName())
 	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
 }
 
+func (s *server) SayHelloAgain(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+        return &pb.HelloReply{Message: "Hello again " + in.GetName()}, nil
+}
+
 func main() {
-        fmt.Printf("\n🚀 Golang gRPC Server ready at %s", Blue("http://localhost"+port))
+        fmt.Printf("\n🚀 Golang gRPC Server ready at %s\n", Blue("http://localhost"+port))
 
 	lis, err := net.Listen("tcp", port)
 	if err != nil {

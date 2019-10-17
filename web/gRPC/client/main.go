@@ -26,7 +26,7 @@ import (
 	"time"
 
 	"google.golang.org/grpc"
-	pb "steadylearner/gRPC/typeDef"
+	pb "steadylearner/gRPC/typeDefs"
 )
 
 const (
@@ -48,12 +48,20 @@ func main() {
 	if len(os.Args) > 1 {
 		name = os.Args[1]
 	}
+
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
-	r, err := c.SayHello(ctx, &pb.HelloRequest{Name: name})
+
+        r, err := c.SayHello(ctx, &pb.HelloRequest{Name: name})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
 	log.Printf("Greeting: %s", r.GetMessage())
+
+        r, err = c.SayHelloAgain(ctx, &pb.HelloRequest{Name: name})
+        if err != nil {
+                log.Fatalf("could not greet: %v", err)
+        }
+        log.Printf("Greeting: %s", r.GetMessage())
 }
 
