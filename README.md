@@ -10,14 +10,14 @@ Use only std packages when you are a beginner.
 ## Install the latest version 
 
 1. [Install Version Manager](https://github.com/moovweb/gvm)
-2. **$gvm install go1.13 &&gvm use go1.13 [--default]**
+2. Use **$gvm install go1.13 &&gvm use go1.13 [--default]** while you refer to [the release history](https://golang.org/doc/devel/release.html).
 
 - **$go mod init** creates a new module, initializing the go.mod file that describes it.
 
 - $go build, $go test, and other package-building commands add new dependencies to go.mod as needed.
 - **$go list -m all** prints the dependencies.
 - **$go get** changes the required version of a dependency (or adds a new dependency).
-- **$go mod** tidy removes unused dependencies.
+- **$go mod tidy** removes unused dependencies.
 
 ## Learn how to structure the projects
 
